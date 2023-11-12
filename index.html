@@ -1,281 +1,1359 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html  >
 <head>
-  <title>ANSHADAZIZ</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="HTML5 website template">
-  <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Cibil Abraham">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>anshadaziz</title>
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/parallax/jarallax.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/themestyle.css">
+  <link rel="stylesheet" href="assets/css/recaptcha.css">
+
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+
+  <link rel="preload" as="style" href="assets/css/additional.css"><link rel="stylesheet" href="assets/css/new-additional.css" type="text/css">
+
+
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  
+  
+  
+  
 </head>
+<style>
+    #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 0px;
+        display: none;
+        background-color: #e75a34 !important;
+        border-color: #e75a34 !important;
+        color: #ffffff !important;
+        z-index: 1000; /* Ensure it's above other elements */
+        border-radius: 10px !important;
+        padding: 0.33333rem 0.6rem;
+        }
+</style>
 <body>
 
+  
+  
+  <section data-bs-version="5.1" class="menu bistro_menu1 cid-t3PcmFS2QD" once="menu" id="menu1-0">
+
+    
+
+    <nav class="navbar navbar-dropdown navbar-expand-lg">
+        <div class="menu_box container">
+            <div class="navbar-brand d-flex d-lg-none">
+                <span class="navbar-logo">
+                    <a href="#">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption display-7" href="#">anshadaziz</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-brand d-none d-lg-flex">
+                <span class="navbar-logo">
+                    <a href="#">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                </span>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption display-5" href="#">Anshadaziz</a></span>
+                </div>
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link display-4" href="#tab-home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link link display-4" href="#tab-about">About</a></li>
+                    <li class="nav-item"><a class="nav-link link display-4" href="#tab-services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link link display-4" href="#tab-careers">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link link display-4" href="#tab-works">Works</a></li>
+                    <li class="nav-item"><a class="nav-link link display-4" href="#tab-contact">Contact us</a></li></ul>
+
+                <div class="icons-menu-main">
+                    <a class="iconfont-wrapper" href="#" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" class=" bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>
+                    </a>
+                    <a class="iconfont-wrapper" href="#" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                          </svg>
+                    </a>
+                    <a class="iconfont-wrapper" href="https://instagram.com/anshad.aziz.aash?igshid=MzRlODBiNWFlZA==" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>
+                    </a>
+                    <a class="iconfont-wrapper" href="#" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg>
+                    </a>
+                </div>
+
+                
+                <div class="offcanvas_box">
+                    <button class="btn_offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            
+                            <div class="offcanvas_contact">
+                                <h3 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>anshadaziz</strong></h3>
+                            </div>
+                            <div class="icons-menu">
+                                <a class="iconfont-wrapper" href="#" target="_blank">
+                                    <svg width="20" height="20" fill="currentColor" class=" bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                      </svg>
+
+                                    <p class="mbr-text mbr-fonts-style display-4">
+                                        Facebook</p>
+                                </a>
+                                <a class="iconfont-wrapper" href="#" target="_blank">
+                                    <svg width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                      </svg>
+                                    <p class="mbr-text mbr-fonts-style display-4">
+                                        Twitter</p>
+                                </a>
+                                <a class="iconfont-wrapper" href="https://instagram.com/anshad.aziz.aash?igshid=MzRlODBiNWFlZA==" target="_blank">
+                                    <svg width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                      </svg>
+                                    <p class="mbr-text mbr-fonts-style display-4">
+                                        Instagram</p>
+                                </a>
+                                <a class="iconfont-wrapper" href="#" target="_blank">
+                                    <svg width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                      </svg>
+                                    <p class="mbr-text mbr-fonts-style display-4">
+                                        Linkedin</p>
+                                </a>
+                            </div>
+                            <p class="text_widget mb-0 mbr-fonts-style display-4"><a href="#" class="text-secondary">4100
+                                Ross Street, Okawville, IL</a>
+                                <br><br>
+                                <a href="tel:12345678900" class="text-secondary">+1 234-567-8900</a>
+                                <br><br>
+                                <a href="tel:98765432100" class="text-secondary">mobi@rise.com</a>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
 
 
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <!-- <img src="assets/img/logo.png" alt="Global"> -->
-            <p>ANSHADAZIZ</p>
-          </a>
-          <button class="header--cta cta">Hire Us</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
-            <li><span>Works</span></li>
-            <li><span>About</span></li>
-            <li><span>Contact</span></li>
-            <li><span>Hire us</span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
+<!-- Home tab session -->
+<section data-bs-version="5.1" class="header1 cid-t3PcmZ0dgn mbr-fullscreen mbr-parallax-background" id="tab-home">
+    
 
+    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(0, 0, 0);">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 images">
+                <img src="assets/images/image6.jpg" alt="">
+                <div class="image-wrapper-1">
+                    <img src="assets/images/image5.jpg" alt="">
+                    <img class="image-absolute-1" src="assets/images/logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 text">
+                <div class="text-wrapper">
+                    <p class="mbr-text mbr-fonts-style display-4">
+                        <strong>Welcome</strong>
+                    </p>
+                    <h1 class="mbr-section-title mbr-fonts-style display-1">
+                        <strong>I'm Anshad Aash Aziz</strong>
+                    </h1>
+                    <h4 class="mbr-text mbr-fonts-style display-4">
+                        <small class="main-small">I have accomplished figures in the fashion and entertainment industry, both in India and internationally. With extensive experience in modeling, I have collaborated with many leading Indian and global fashion brands, as well as prestigious fashion houses like Emirates modeling and Diva model management. Expertise extends to choreographing major shows for renowned events such as Dubai Fashion Week and Indian Fashion Week, i have worked alongside international designers and brands. In addition to my works in the fashion world, I have also made a mark as an Indian reporter with the esteemed Miami-based 'Fashion Face' magazine, introducing Indian fashion trends and models to a global audience. Besides my successful modeling career, I'm a professional dancer skilled in both Classical and Western forms, showcasing my versatile talents in the industry.</small>
+                    </h4>
+                    <div class="mbr-section-btn align-center">
+                        <a class="btn btn-success display-4" href="#tab-contact">Contact us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 images">
+                <img src="assets/images/image7.jpg" alt="">
+                <div class="image-wrapper-2">
+                    <!-- <img class="image-absolute-2" src="assets/images/image10.jpeg" alt=""> -->
+                    <img src="assets/images/image10.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End home tab session -->
+
+
+
+
+
+<section data-bs-version="5.1" class="features4 cid-t3Pcstg1ll" id="tab-about">
+    
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-12 col-lg-12 col-md-12">
+                <h3 class="mbr-section-subtitle mbr-fonts-style display-4">
+                    <strong>EXPLORING SELF-DEFINITION</strong>
+                </h3>
+            </div> -->
+            <div class="col-12 col-lg-6 col-md-12">
+                <h2 class="mbr-section-title mbr-fonts-style display-2">
+                    <strong>A Journey of Self-Exploration</strong></h2>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12">
+                <p class="mbr-text mbr-fonts-style display-7">
+                    I have worked with leading Indian and international fashion brands, sportswear, swimwear, accessory brands, watch brands, jewelleries and leading international fashion houses such as Emirates modeling, Diva model management, Al-Shima model casting etc.I have choreographed shows for internationally renowned Dubai Fashion week, Zabeel International Fashion week, IFW, manhunt international, Indian designer league,indian fashion week, goa fashion week etc.... where I have worked with international designers and brands such as Albert , Zena Fashion bou-tique etc. I have a multi faceted personality with which I was not only successful in the fashion industry but also made a mark as an Indian reporter with the renowned Miami based 'Fashion Face' magazine where I introduced Indian fashion trends and models to the world. A pro-fessional dancer in both Classical and Western </p>
+            </div>
+            <div class="col-12 col-lg-12 cards">
+                <div class="image-card">
+                    <img src="assets/images/about1.jpeg" alt="">
+                    <div class="image-card-text">
+                        <p class="mbr-image-text mbr-fonts-style display-5">
+                            Emirates Modeling</p>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="assets/images/image7.jpg" alt="">
+                    <div class="image-card-text">
+                        <p class="mbr-image-text mbr-fonts-style display-5">
+                            IFW</p>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="assets/images/about-image1.jpg" alt="">
+                    <div class="image-card-text">
+                        <p class="mbr-image-text mbr-fonts-style display-5">
+                            Banglore Fashion Week</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-12 col-md-12 pt-3">
+                <p class="mbr-text mbr-fonts-style display-7">
+                    Worked with top Indian designers and have also choreographed major pageants such as Mr. North India 2010/11, Mr/Ms Punjab 2010/11 and Mr. Haryana 2010/11 and have done many ad campaigns for leading textile stores and jewellers based in India. </p>
+
+            </div>
+
+            <div class="col-12 col-lg-12 col-md-12 pt-3">
+                
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        Sometimes your destiny takes you on a way that you have never thought of. Life offers challenge and one should take it positively. The simple act of getting started and doing something will give you the momentum you need, and soon you will find yourself in a positive spiral of changes. This industry is always full of stylish ideas and I'm delighted to provide this industry the most talented models to express themselves and carve a niche in the advertising segment, fashion and film industry. 
+                    </p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+<section data-bs-version="5.1" class="features1 cid-t3PcnWcHIN" >
+    
+
+    
+
+    <div class="container">
+        <div class="features-header">
+            <h3 class="mbr-section-subtitle mbr-fonts-style display-4">
+                <strong>EXPLORING SELF-DEFINITION</strong>
+            </h3>
+            <h2 class="mbr-section-title mbr-fonts-style display-2">
+                <strong>Defining Who I Am</strong>
+            </h2>
+        </div>
+        <div class="row">
+           
+            <div class="col-12 col-lg-4 col-md-12 features-card">
+                <img src="assets/images/about1.jpeg" alt="">
+                <p class="mbr-text mbr-fonts-style display-5">
+                    <strong>CEO</strong>
+                </p>
+            </div>
+            <div class="col-12 col-lg-4 col-md-12 features-card">
+                <img src="assets/images/about-image1.jpg" alt="">
+                <p class="mbr-text mbr-fonts-style display-5">
+                    <strong>Show Director</strong>
+                </p>
+            </div>
+            <div class="col-12 col-lg-4 col-md-12 features-card">
+                <img src="assets/images/image3.jpg" alt="">
+                <p class="mbr-text mbr-fonts-style display-5">
+                    <strong>Choreographer</strong>
+                </p>
+            </div>
+            <div class="col-12 col-lg-4 col-md-12 features-card">
+                <img src="assets/images/dancer.jpg" alt="">
+                <p class="mbr-text mbr-fonts-style display-5">
+                    <strong>Dance Teacher</strong>
+                </p>
+            </div>
+
+
+            <div class="col-12 col-lg-4 col-md-12 features-card">
+                <img src="assets/images/designer.jpg" alt="">
+                <p class="mbr-text mbr-fonts-style display-5">
+                    <strong>Designer</strong>
+                </p>
+            </div>
+
+
+            <div class="col-12 col-lg-4 col-md-12 features-card">
+                <img src="assets/images/western-dancer.jpg" alt="">
+                <p class="mbr-text mbr-fonts-style display-5">
+                    <strong>Western and Indian classical dancer</strong>
+                </p>
+            </div>
+            <div class="col-12 col-lg-4 col-md-12 features-card">
+                <img src="assets/images/mappila-kala-instructor.jpg" alt="">
+                <p class="mbr-text mbr-fonts-style display-5">
+                    <strong>Mappila kala instructor</strong>
+                </p>
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-12 features-card">
+                <img src="assets/images/drama-artist.jpg" alt="">
+                <p class="mbr-text mbr-fonts-style display-5">
+                    <strong>Drama artist</strong>
+                </p>
+            </div>
 
           
-          <li class="l-section section section--is-active" >
-            <div class="intro">
-              <div class="intro--banner">
-                <h1><small style="font-size: 40%;">It's me</small> <br>ANSHADAZIZ<br></h1>
-                <button class="cta">Hire Us
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button>
-                <img src="assets/img/introduction-visual.png" alt="Welcome">
-              </div>
-              <div class="intro--options">
-                <a href="#0">
-                  <h3>Metiew &amp; Smith</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                <a href="#0">
-                  <h3>Fantasy interactive</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                <a href="#0">
-                  <h3>Paul &amp; shark</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                
-              </div>
 
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>Selected work</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-victory.jpg" alt="Victory">
-                      </div>
-                      <p class="slider--item-title">Victory</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
-                      </div>
-                      <p class="slider--item-title">Metiew &amp; Smith</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">Alex Nowak</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <h2>We<br>believe in<br>passionate<br>people</h2>
-                <a href="#0">Career
-                  <span>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                    </g>
-                    </svg>
-                  </span>
-                </a>
-                <img src="assets/img/about-visual.png" alt="About Us">
-              </div>
-              <div class="about--options">
-                <a href="#0">
-                  <h3>Winners</h3>
-                </a>
-                <a href="#0">
-                  <h3>Philosophy</h3>
-                </a>
-                <a href="#0">
-                  <h3>History</h3>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="contact">
-              <div class="contact--lockup">
-                <div class="modal">
-                  <div class="modal--information">
-                    <p>Pawia 5, 31-154 Kraków, Poland</p>
-                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
-                    <a href="tel:+148126287560">+48 12 628 75 60</a>
-                  </div>
-                  <ul class="modal--options">
-                    <li><a href="#0">Bēhance</a></li>
-                    <li><a href="#0">dribbble</a></li>
-                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="hire">
-              <h2>You want us to do</h2>
-              <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
-                <div class="work-request--options">
-                  <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design">
-                    <label for="opt-1">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      App Design
-                    </label>
-                    <input id="opt-2" type="checkbox" value="graphic design">
-                    <label for="opt-2">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Graphic Design
-                    </label>
-                    <input id="opt-3" type="checkbox" value="motion design">
-                    <label for="opt-3">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Motion Design
-                    </label>
-                  </span>
-                  <span class="options-b">
-                    <input id="opt-4" type="checkbox" value="ux design">
-                    <label for="opt-4">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      UX Design
-                    </label>
-                    <input id="opt-5" type="checkbox" value="webdesign">
-                    <label for="opt-5">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Webdesign
-                    </label>
-                    <input id="opt-6" type="checkbox" value="marketing">
-                    <label for="opt-6">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Marketing
-                    </label>
-                  </span>
-                </div>
-                <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-                <input type="submit" value="Send Request">
-              </form>
-            </div>
-          </li>
-
-
-
-
-        </ul>
-      </div>
+          
+         
+        </div>
     </div>
-  </div>
-  <ul class="outer-nav">
-    <li class="is-active">Home</li>
-    <li>Works</li>
-    <li>About</li>
-    <li>Contact</li>
-    <li>Hire us</li>
-  </ul>
-</div>
+</section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
+
+<section data-bs-version="5.1" class="features5 cid-t3Pcr4WK0r" id="tab-services">
+    
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                <h3 class="mbr-section-subtitle mbr-fonts-style display-4">
+                    <strong>FASHION CONSULTANT</strong></h3>
+                <h2 class="mbr-section-title mbr-fonts-style display-2">
+                    <strong>Grooming Student for Fashion Modeling </strong></h2>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="content-card">
+                    <div class="content-card-icon">
+                        <img src="assets/images/tw-swot-analysis.jpg" alt="">
+                    </div>
+                    <div class="content-card-text">
+                        
+
+                            <p class="mbr-card-text mbr-fonts-style display-7">
+                                Identifying the SWOT of each student wrt to Modeling & Personality.</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="content-card">
+                    <div class="content-card-icon">
+                        <img src="assets/images/Mentoring-Graphic.jpg" alt="">
+                    </div>
+                    <div class="content-card-text">
+                      
+                            <p class="mbr-card-text mbr-fonts-style display-7">
+                                Mentoring the students on the aspect of overall Personality development.</p>
+                       
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="content-card">
+                    <div class="content-card-icon">
+                        <img src="assets/images/training-image.jpg" alt="">
+                    </div>
+                    <div class="content-card-text">
+                      
+                            <p class="mbr-card-text mbr-fonts-style display-7">
+                                Training up-coming as well as Professional Models.</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="content-card">
+                    <div class="content-card-icon">
+                        <img src="assets/images/runway.jpg" alt="">
+                    </div>
+                    <div class="content-card-text">
+                       
+                            <p class="mbr-card-text mbr-fonts-style display-7">
+                                Organize Independent Fashion Shows for some of the esteemed Clients.</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="content-card">
+                    <div class="content-card-icon">
+                        <img src="assets/images/design-image.jpg" alt="">
+                    </div>
+                    <div class="content-card-text">
+                      
+                            <p class="mbr-card-text mbr-fonts-style display-7">
+                                Co-ordinates with the Fashion designer to prepare costumes for the Models.</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content2 cid-t3PcEVKYvt" >
+    
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                
+                <h2 class="mbr-section-title mbr-fonts-style display-2">
+                    <strong>Conducting corporate events</strong></h2>
+                <p class="mbr-text mbr-fonts-style display-7">
+                    We offer corporate event planning services,is a valuable contribution to businesses seeking to host successful and impactful gatherings. we expertise in meticulous planning, attention to detail, and ability to execute seamless events can be instrumental in achieving clients' objectives.</p>
+                <div class="list-wrapper">
+                    <div class="mbr-list mbr-fonts-style display-4">
+                        <ul>
+                            <li><strong>Managing product launches</strong></li>
+                            <li><strong>Managing youth oriented events</strong></li>
+                            <li><strong>Conducting Annual Events for Prestigious Clubs</strong></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img src="assets/images/image2.jpg" alt="">
+                    <img class="image-absolute" src="assets/images/image4.jpg" alt="">
+                    <img class="image-logo" src="assets/images/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section data-bs-version="5.1" class="features4 cid-t3Pcstg1ll" id="tab-careers">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 col-lg-12 col-md-12">
+                <h2 class="mbr-section-title mbr-fonts-style display-2">
+                    <strong>Pioneering Excellences</strong></h2>
+            </div>
+            <div class="col-12 col-lg-12 col-md-12 pt-3">
+                <p class="mbr-text mbr-fonts-style display-7">
+                    I am one of the top fashion designers and choreographers in the UAE.I am also an internationally renowned model trainer.I entered the field in 2009 at a very young age and quickly established a strong reputation for India in the global fashion choreography market. Since then,I have choreographed numerous prestigious fashion shows worldwide, featuring Hollywood stars, television actors, top Indian models, and have hosted for international models from Australia, China, Canada, Russia, Europe, South Africa, and the USA.I have collaborated with leading Indian and international fashion brands, including sportswear, swimwear, accessories, watches, and jewelry.I have also worked with esteemed international fashion houses such as Emirates Modeling, Diva Model Management, and Al-Shima Model Casting. Additionally, I have choreographed shows for internationally acclaimed events like Dubai Fashion Week, Zabeel International Fashion Week, IFW, and Manhunt International. </p>
+            </div>
+           
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section data-bs-version="5.1" class="features2 cid-t3Pcp7Aqxk" id="tab-works" >
+    
+
+    
+
+    <div class="container">
+        <div class="features-header">
+            <h3 class="mbr-section-subtitle mbr-fonts-style display-4">
+                <strong>WORKS</strong>
+            </h3>
+            <h2 class="mbr-section-title mbr-fonts-style display-2">
+                <strong>Our Possibilities</strong>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 card">
+                <div class="card-wrapper">
+                    <img src="assets/images/5.png" alt="">
+                    <h4 class="mbr-card-title mbr-fonts-style display-5">
+                        Swimming Pool</h4>
+                    <p class="mbr-card-desc mbr-fonts-style display-7">
+                        Description</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 card">
+                <div class="card-wrapper">
+                    <img src="assets/images/6.png" alt="">
+                    <h4 class="mbr-card-title mbr-fonts-style display-5">
+                        Always Online</h4>
+                    <p class="mbr-card-desc mbr-fonts-style display-7">
+                        Description</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 card">
+                <div class="card-wrapper">
+                    <img src="assets/images/7.png" alt="">
+                    <h4 class="mbr-card-title mbr-fonts-style display-5">
+                        Write Us</h4>
+                    <p class="mbr-card-desc mbr-fonts-style display-7">
+                        Description</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 card">
+                <div class="card-wrapper">
+                    <img src="assets/images/8.png" alt="">
+                    <h4 class="mbr-card-title mbr-fonts-style display-5">
+                        Weather is Wonderful</h4>
+                    <p class="mbr-card-desc mbr-fonts-style display-7">
+                        Description</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4  card">
+                <div class="card-wrapper">
+                    <img src="assets/images/9.png" alt="">
+                    <h4 class="mbr-card-title mbr-fonts-style display-5">
+                        Testy Food</h4>
+                    <p class="mbr-card-desc mbr-fonts-style display-7">
+                        Description</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 card">
+                <div class="card-wrapper">
+                    <img src="assets/images/10.png" alt="">
+                    <h4 class="mbr-card-title mbr-fonts-style display-5">
+                        Pleasant Stay</h4>
+                    <p class="mbr-card-desc mbr-fonts-style display-7">
+                        Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section data-bs-version="5.1" class="features8 cid-t3PdExP6PL" id="features8-g">
+    
+
+    
+
+    <div>
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-3 col-md-6 card item features-image">
+                <div class="item-wrapper">
+                    <img src="assets/images/image9.jpg" alt="">
+                    <a href="#" class="card-link">
+                        <div class="card-wrapper">
+                            <p class="mbr-number mbr-fonts-style display-5">
+                                <strong>01</strong>
+                            </p>
+                            <div class="card-text">
+                                <h4 class="mbr-title mbr-fonts-style display-5">
+                                    <strong>Water rides</strong></h4>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                    Cupiditate, sit exercitationem
+                                </p>
+                                <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 card item features-image">
+                <div class="item-wrapper">
+                    <img src="assets/images/image4.jpg" alt="">
+                    <a href="#" class="card-link">
+                        <div class="card-wrapper">
+                            <p class="mbr-number mbr-fonts-style display-5">
+                                <strong>02</strong>
+                            </p>
+                            <div class="card-text">
+                                <h4 class="mbr-title mbr-fonts-style display-5">
+                                    <strong>Ferris wheelss</strong></h4>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                    Cupiditate, sit exercitationem
+                                </p>
+                                <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 card item features-image">
+                <div class="item-wrapper">
+                    <img src="assets/images/image8.jpg" alt="">
+                    <a href="#" class="card-link">
+                        <div class="card-wrapper">
+                            <p class="mbr-number mbr-fonts-style display-5">
+                                <strong>03</strong>
+                            </p>
+                            <div class="card-text">
+                                <h4 class="mbr-title mbr-fonts-style display-5">
+                                    <strong>Transport rides</strong></h4>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                    Cupiditate, sit exercitationem
+                                </p>
+                                <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 card item features-image">
+                <div class="item-wrapper">
+                    <img src="assets/images/image6.jpg" alt="">
+                    <a href="#" class="card-link">
+                        <div class="card-wrapper">
+                            <p class="mbr-number mbr-fonts-style display-5">
+                                <strong>04</strong>
+                            </p>
+                            <div class="card-text">
+                                <h4 class="mbr-title mbr-fonts-style display-5">
+                                    <strong>Food</strong></h4>
+                                <p class="mbr-text mbr-fonts-style display-7">
+                                    Cupiditate, sit exercitationem
+                                </p>
+                                <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="Content6 cid-t3PcVgwd8a" id="content6-a">
+    
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-3 card-wrap-1">
+                <div class="card-1">
+                    <h4 class="mbr-section-title mbr-fonts-style display-5">
+                        <strong>Super Events</strong>
+                    </h4>
+                    <p class="mbr-section-text mbr-fonts-style display-7">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deleniti.
+                    </p>
+                    <ul class="list mbr-fonts-style display-7">
+                        <li>Mon-Fri: 9 AM – 6 PM</li>
+                        <li>Mon-Fri: 9 AM – 6 PM</li>
+                        <li>Mon-Fri: 9 AM – 6 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img src="assets/images/image8.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card-wrap-2">
+                <div class="card-2">
+                    <h4 class="mbr-title mbr-fonts-style display-5">
+                        <strong>Contact Us</strong>
+                    </h4>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deleniti.
+                    </p>
+                    <div class="mbr-section-btn">
+                        <a class="btn btn-primary display-4" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="slider2 mbr-embla cid-t3Pd2vfjKS" id="slider2-b">
+    
+
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);">
+    </div>
+    <div class="position-relative text-center">
+        <div class="col-12">
+            <h3 class="mbr-section-subtitle mbr-fonts-style display-4">
+                <strong>CREATIVE ATTRACTION</strong>
+            </h3>
+            <h2 class="mbr-section-title mbr-fonts-style display-2">
+                <strong>River Attraction</strong>
+            </h2>
+            <div class="mbr-text mbr-fonts-style counter-container display-4">
+                <ul>
+                    <li>Amazing</li>
+                    <li>Unusual</li>
+                    <li>Stunning</li>
+                </ul>
+            </div>
+        </div>
+        <div class="embla" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true" data-auto-play-interval="5" data-draggable="true">
+            <div class="embla__viewport container-fluid">
+                <div class="embla__container">
+                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                        <div class="card-wrap">
+                            <div class="item-wrapper position-relative">
+                                <div class="image-wrap">
+                                    <img src="assets/images/image8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                        <div class="card-wrap">
+                            <div class="item-wrapper position-relative">
+                                <div class="image-wrap">
+                                    <img src="assets/images/image9.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                        <div class="card-wrap">
+                            <div class="item-wrapper position-relative">
+                                <div class="image-wrap">
+                                    <img src="assets/images/image4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                        <div class="card-wrap">
+                            <div class="item-wrapper position-relative">
+                                <div class="image-wrap">
+                                    <img src="assets/images/image16.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="embla__button embla__button--prev">
+                <span class="mobi-mbri mobi-mbri-left mbr-iconfont" aria-hidden="true"></span>
+                <span class="sr-only visually-hidden visually-hidden">Previous</span>
+            </button>
+            <button class="embla__button embla__button--next">
+                <span class="mobi-mbri mobi-mbri-right mbr-iconfont" aria-hidden="true"></span>
+                <span class="sr-only visually-hidden visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Contact us session -->
+<section data-bs-version="5.1" class="form3 cid-t3Pd4hE303" id="tab-contact">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-6 item-image">
+                <img src="assets/images/image2.jpg" alt="">
+            </div>
+            <div class="col-12 lg-lg-6 col-md-6 item-form">
+                <h2 class="mbr-section-title mbr-fonts-style display-2">
+                    <strong>Contact us</strong>
+                </h2>
+                <div class="mx-auto mbr-form" data-form-type="formoid">
+                    <!--Formbuilder Form-->
+                   
+                        <div class="row">
+                            <div class="alert alert-success col-12 d-none" id="contact-success-meg">Thanks, We'll reach you soon!</div>
+                            <div class="alert alert-danger col-12 d-none" id="contact-err-meg"> Oops...!
+                                some problem!
+                            </div>
+                        </div>
+                        <div class="dragArea row">
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="text2">
+                                <input type="text" name="text-name" placeholder="Enter your Name" data-form-field="text-name" class="form-control display-7" value="" id="text-name">
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="text2">
+                                <input type="text" name="text-phone" placeholder="Enter your Phone" data-form-field="text-phone" class="form-control display-7" value="" id="text-phone">
+                            </div>
+
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="text2">
+                                <input type="text" name="text-email" placeholder="Enter your Email" data-form-field="text-email" class="form-control display-7" value="" id="text-email">
+                            </div>
+
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                <div class="form-control-label">
+                                </div>
+                              
+                            </div>
+                            <div class="col-auto" style="padding-top: 20px;;">
+                                <button onclick="contactNow();" class="btn btn-primary display-4">Submit</button>
+                            </div>
+                        </div>
+                  
+                </div>
+
+                <hr>
+
+                <p class="text_widget mb-0 mbr-fonts-style display-4 pt-5"><a href="#" class="text-secondary">4100
+                    Ross Street, Okawville, IL</a>
+                    <br><br>
+                    <a href="tel:12345678900" class="text-secondary">+1 234-567-8900</a>
+                    <br><br>
+                    <a href="tel:98765432100" class="text-secondary">mobi@rise.com</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- End contact us session -->
+
+
+
+
+
+
+
+
+
+
+<section data-bs-version="5.1" class="slider4 mbr-embla cid-t3Pfc2MVKn" id="slider4-h">
+    
+
+    <div class="position-relative text-center">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-subtitle mbr-fonts-style display-4">
+                <strong>FAVORITE GUESTS</strong>
+            </h3>
+            <h2 class="mbr-section-title mbr-fonts-style display-2">
+                <strong>Your Feedback</strong>
+            </h2>
+        </div>
+        <div class="embla" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true" data-auto-play-interval="5" data-draggable="true">
+            <div class="embla__viewport container-fluid">
+                <div class="embla__container">
+                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                        <div class="slide-content">
+                            <div class="item-rating">
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                            </div>
+                            <p class="mbr-text mbr-fonts-style display-7">anshadaziz is an easy website builder. Just
+                                drop site elements to your page, add content and style it to look the way you like.
+                                anshadaziz is an easy website builder. Just
+                                drop site elements to your page, add content and style it to look the way you like
+                            </p>
+                            <h4 class="item-title mbr-fonts-style display-5"><strong>Gary Foster</strong>
+                            </h4>
+                            <p class="item-subtitle mbr-fonts-style display-7">
+                                Guest
+                            </p>
+                        </div>
+                    </div>
+                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                        <div class="slide-content">
+                            <div class="item-rating">
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                            </div>
+                            <p class="mbr-text mbr-fonts-style display-7">anshadaziz is an easy website builder. Just
+                                drop site elements to your page, add content and style it to look the way you like.
+                            </p>
+                            <h4 class="item-title mbr-fonts-style display-5"><strong>Walter Bryan</strong>
+                            </h4>
+                            <p class="item-subtitle mbr-fonts-style display-7">
+                                Guest
+                            </p>
+                        </div>
+                    </div>
+                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                        <div class="slide-content">
+                            <div class="item-rating">
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                            </div>
+                            <p class="mbr-text mbr-fonts-style display-7">anshadaziz is an easy website builder. Just
+                                drop site elements to your page, add content and style it to look the way you like.
+                                anshadaziz is an easy website builder. Just
+                                drop site elements to your page, add content and style it to look the way you likeanshadaziz is an easy website builder. Just
+                                drop site elements to your page, add content and style it to look the way you like
+                            </p>
+                            <h4 class="item-title mbr-fonts-style display-5"><strong>Terri Hampton</strong>
+                            </h4>
+                            <p class="item-subtitle mbr-fonts-style display-7">
+                                Guest
+                            </p>
+                        </div>
+                    </div>
+                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                        <div class="slide-content">
+                            <div class="item-rating">
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                            </div>
+                            <p class="mbr-text mbr-fonts-style display-7">anshadaziz is an easy website builder. Just
+                                drop site elements to your page, add content and style it to look the way you like.
+                            </p>
+                            <h4 class="item-title mbr-fonts-style display-5"><strong>Carol Roberts</strong>
+                            </h4>
+                            <p class="item-subtitle mbr-fonts-style display-7">
+                                Guest
+                            </p>
+                        </div>
+                    </div>
+                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                        <div class="slide-content">
+                            <div class="item-rating">
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                            </div>
+                            <p class="mbr-text mbr-fonts-style display-7">anshadaziz is an easy website builder. Just
+                                drop site elements to your page, add content and style it to look the way you like.
+                            </p>
+                            <h4 class="item-title mbr-fonts-style display-5"><strong>Scott Rodriguez</strong>
+                            </h4>
+                            <p class="item-subtitle mbr-fonts-style display-7">
+                                Guest
+                            </p>
+                        </div>
+                    </div>
+                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                        <div class="slide-content">
+                            <div class="item-rating">
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                            </div>
+                            <p class="mbr-text mbr-fonts-style display-7">anshadaziz is an easy website builder. Just
+                                drop site elements to your page, add content and style it to look the way you like.anshadaziz is an easy website builder. Just
+                                drop site elements to your page, add content and style it to look the way you likeanshadaziz is an easy website builder. Just
+                                drop sit.
+                            </p>
+                            <h4 class="item-title mbr-fonts-style display-5"><strong>Kevin Clarke</strong>
+                            </h4>
+                            <p class="item-subtitle mbr-fonts-style display-7">
+                                Guest
+                            </p>
+                        </div>
+                    </div>
+                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                        <div class="slide-content">
+                            <div class="item-rating">
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                            </div>
+                            <p class="mbr-text mbr-fonts-style display-7">anshadaziz is an easy website builder. Just
+                                drop site elements to your page, add content and style it to look the way you like.
+                            </p>
+                            <h4 class="item-title mbr-fonts-style display-5"><strong>Sean Marsh</strong>
+                            </h4>
+                            <p class="item-subtitle mbr-fonts-style display-7">
+                                Guest
+                            </p>
+                        </div>
+                    </div>
+                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                        <div class="slide-content">
+                            <div class="item-rating">
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                                <span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+                            </div>
+                            <p class="mbr-text mbr-fonts-style display-7">anshadaziz is an easy website builder. Just
+                                drop site elements to your page, add content and style it to look the way you like.
+                            </p>
+                            <h4 class="item-title mbr-fonts-style display-5"><strong>John Peterson</strong>
+                            </h4>
+                            <p class="item-subtitle mbr-fonts-style display-7">
+                                Guest
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="embla__button embla__button--prev">
+                <span class="mobi-mbri mobi-mbri-left mbr-iconfont" aria-hidden="true"></span>
+                <span class="sr-only visually-hidden visually-hidden">Previous</span>
+            </button>
+            <button class="embla__button embla__button--next">
+                <span class="mobi-mbri mobi-mbri-right mbr-iconfont" aria-hidden="true"></span>
+                <span class="sr-only visually-hidden visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery1 cid-t3Pd5DEOuZ" id="gallery1-d">
+    
+
+    
+
+    <div>
+        <div class="row">
+            <div class="col-12 col-lg-2 col-md-6 col-sm-6 image">
+                <div class="image-overlay"></div>
+                <img src="assets/images/image2.jpg" alt="">
+            </div>
+            <div class="col-12 col-lg-2 col-md-6  col-sm-6 image">
+                <div class="image-overlay"></div>
+                <img src="assets/images/image3.jpg" alt="">
+            </div>
+            <div class="col-12 col-lg-2 col-md-6  col-sm-6 image">
+                <div class="image-overlay"></div>
+                <img src="assets/images/image4.jpg" alt="">
+            </div>
+            <div class="col-12 col-lg-2 col-md-6  col-sm-6 image">
+                <div class="image-overlay"></div>
+                <img src="assets/images/image5.jpg" alt="">
+            </div>
+            <div class="col-12 col-lg-2 col-md-6  col-sm-6 image">
+                <div class="image-overlay"></div>
+                <img src="assets/images/image6.jpg" alt="">
+            </div>
+            <div class="col-12 col-lg-2 col-md-6  col-sm-6 image">
+                <div class="image-overlay"></div>
+                <img src="assets/images/image7.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="icon">
+                <a class="mbr-link" href="#">
+                    <svg  width="25" height="25" style="fill: #84858a;" class="bi bi-camera" viewBox="0 0 16 16">
+                        <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                        <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                      </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section data-bs-version="5.1" class="footer1 cid-t3Pd6l5PtY" once="footers" id="footer1-e">
+
+    
+
+    
+
+    <div class="container-fluid">
+        <div class="media-container-row mbr-white">
+            <div class="title-wrapper">
+                <h4 class="mbr-section-title mbr-fonts-style display-5">
+                    <strong>anshadaziz</strong>
+                </h4>
+            </div>
+            <div class="row row-links">
+                <ul class="foot-menu mbr-fonts-style display-4">
+                    <li class="foot-menu-item mbr-fonts-style">
+                        <a class="text-white" href="#tab-about">About us</a>
+                    </li>
+                    <li class="foot-menu-item mbr-fonts-style">
+                        <a class="text-white" href="#tab-services">Services</a>
+                    </li>
+                   
+                    <li class="foot-menu-item mbr-fonts-style">
+                        <a class="text-white" href="#tab-careers">Careers</a>
+                    </li><li class="foot-menu-item mbr-fonts-style">
+                        <a class="text-white" href="#tab-works">Works</a>
+                    </li>
+                    <li class="foot-menu-item mbr-fonts-style">
+                        <a class="text-white" href="#tab-contact">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row social-row">
+                <div class="social-list">
+                    
+                    
+                    
+                    
+                    
+                    
+                <div class="soc-item">
+                        <a href="https://twitter.com/anshadaziz" target="_blank">
+                            <svg width="20" height="20" fill="white" class=" bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                              </svg>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://www.facebook.com/pages/anshadaziz/1616226671953247" target="_blank">
+                            <svg width="20" height="20" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                              </svg>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://instagram.com/anshad.aziz.aash?igshid=MzRlODBiNWFlZA==" target="_blank">
+                            <svg width="20" height="20" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                              </svg>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://instagram.com/anshadaziz" target="_blank">
+                            <svg width="20" height="20" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                              </svg>
+                        </a>
+                    </div></div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="mbr-text mbr-fonts-style display-7">
+                © <strong>Copyright 2023 anshadaziz.</strong> All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<button
+    type="button"
+    class="btn btn-floating"
+    id="btn-back-to-top"
+>
+<svg  width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  </svg>
+</button>
+
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/parallax/jarallax.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/ytplayer/index.js"></script>
+  <script src="assets/js/navbar-dropdown.js"></script>
+  <script src="assets/embla/embla.min.js"></script>
+  <script src="assets/embla/script.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/formoid.min.js"></script>
+
+
+  <script>
+
+    emailjs.init("_8hWq8KL4Jg1LuAS8");
+
+
+
+    //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+function contactNow(){
+    var name = $('#text-name').val();
+    var phone = $('#text-phone').val();
+    var email = $('#text-email').val();
+
+    $('#contact-success-meg').addClass('d-none');
+    $('#contact-err-meg').addClass('d-none');
+
+
+    if(name == ""){
+        $('#text-name').focus();
+        $('#contact-err-meg').removeClass('d-none');
+        $('#contact-err-meg').html('Oops...! please enter your Name!');
+        return false;
+    }
+
+    if(phone == ""){
+        $('#text-phone').focus();
+        $('#contact-err-meg').removeClass('d-none');
+        $('#contact-err-meg').html('Oops...! please enter your Phone!');
+        return false;
+    }
+
+    var phonePattern = /^\d{10}$/;
+    if (!phonePattern.test(phone)) {
+        $('#text-phone').focus();
+        $('#contact-err-meg').removeClass('d-none');
+        $('#contact-err-meg').html('Oops...! please enter valid Phone!');
+        return false;
+    }
+
+    if(email == ""){
+        $('#text-email').focus();
+        $('#contact-err-meg').removeClass('d-none');
+        $('#contact-err-meg').html('Oops...! please enter your Email!');
+        return false;
+    }
+
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    if (!emailPattern.test(email)) {
+        $('#text-email').focus();
+        $('#contact-err-meg').removeClass('d-none');
+        $('#contact-err-meg').html('Oops...! please enter valid Email!');
+        return false;
+   
+    } 
+
+    var templateId = "template_0mpdfbv";
+    var emailParams = {
+    to_email: email,
+    from_name:name,
+    message:phone
+    // Other parameters, if needed
+    };
+
+    emailjs.send("service_47e1u6h", templateId, emailParams)
+    .then(function(response) {
+        if(response.status == 200 || response.status == '200'){
+            $('#contact-success-meg').removeClass('d-none');
+            return false;
+        }else{
+            $('#contact-err-meg').removeClass('d-none');
+            $('#contact-err-meg').html('Oops...! some problem!');
+        }
+    }, function(error) {
+        $('#contact-err-meg').removeClass('d-none');
+        $('#contact-err-meg').html('Oops...! some problem!');
+    });
+   
+
+}
+
+
+
+
+
+
+  </script>
+  
+  
+  
 </body>
 </html>
